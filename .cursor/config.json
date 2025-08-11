@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "vercel-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@vercel/mcp@latest",
+        "--url",
+        "http://localhost:3000/api/mcp",
+        "--name",
+        "vercel-mcp"
+      ]
+    }
+  }
+}
