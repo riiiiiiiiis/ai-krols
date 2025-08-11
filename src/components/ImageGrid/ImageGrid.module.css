@@ -1,0 +1,22 @@
+.gridView {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));
+  grid-gap: 2px;
+  padding: 10px;
+}
+
+/* Tablet breakpoint */
+@media (min-width: 768px) {
+  .gridView {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 4px;
+    padding: 4px;
+  }
+}
+
+/* Desktop breakpoint */
+@media (min-width: 1200px) {
+  .gridView {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  }
+}

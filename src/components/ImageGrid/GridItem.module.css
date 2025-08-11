@@ -1,0 +1,43 @@
+.gridItem {
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.gridNumber {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  background-color: transparent;
+  color: black;
+  font-size: 8px;
+  padding: 0;
+  z-index: 2;
+  pointer-events: none;
+  line-height: 1;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.psychTerm {
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  font-size: 6px;
+  color: black;
+  opacity: 0.7;
+  z-index: 2;
+  pointer-events: none;
+  line-height: 1;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.image {
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.gridItem:hover .image {
+  transform: scale(1.4);
+}
